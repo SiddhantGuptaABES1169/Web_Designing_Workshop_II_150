@@ -30,6 +30,7 @@ function calculateResult() {
   let average = total / count;
   let grade;
 
+  
   if (average >= 75) grade = "A";
   else if (average >= 60) grade = "B";
   else if (average >= 50) grade = "C";
