@@ -3,7 +3,7 @@ function calculateResult() {
 
   if (count <= 0 || isNaN(count)) {
     alert("Enter valid number");
-    return
+    return;
   }
 
   let total = 0;
