@@ -31,3 +31,14 @@ function displayEmployees() {
     if (employees.length === 0) {
         output += "No employees added yet.";
     }
+    employees.forEach(emp => {
+        output += `
+        Name: ${emp.name} |
+        ID: ${emp.id} |
+        Salary: ₹${emp.salary} |
+        Department: ${emp.department} <br>
+        `;
+    });
+
+    document.querySelector(".result").innerHTML = output;
+}
