@@ -79,3 +79,10 @@ function averageSalary() {
     document.querySelector(".result").innerHTML =
     "<h3>Average Salary: ₹" + avg.toFixed(2) + "</h3>";
 }
+function sortByDepartment() {
+
+    let sorted = [...employees].sort((a, b) =>
+        a.department.localeCompare(b.department)
+);
+
+let output = "<h3>Employees Sorted by Department</h3>";
