@@ -66,3 +66,16 @@ function totalSalary() {
     document.querySelector(".result").innerHTML =
     "<h3>Total Salary Payout: ₹" + total + "</h3>";
 }
+function averageSalary() {
+
+    if (employees.length === 0) {
+        document.querySelector(".result").innerHTML =
+        "<h3>No employee records available</h3>";
+        return;
+    }
+
+    let total = employees.reduce((sum, emp) => sum + emp.salary, 0);
+    let avg = total / employees.length;
+    document.querySelector(".result").innerHTML =
+    "<h3>Average Salary: ₹" + avg.toFixed(2) + "</h3>";
+}
