@@ -24,3 +24,10 @@ function addEmployee() {
     document.getElementById("salary").value = "";
     document.getElementById("department").value = "";
 }
+function displayEmployees() {
+
+    let output = "<h3>All Employees</h3>";
+
+    if (employees.length === 0) {
+        output += "No employees added yet.";
+    }
