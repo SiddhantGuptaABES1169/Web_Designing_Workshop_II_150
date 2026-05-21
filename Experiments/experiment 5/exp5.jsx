@@ -11,3 +11,10 @@ function addEmployee() {
         alert("Please fill all fields properly");
         return;
     }
+     let employee = {
+        name: name,
+        id: id,
+        salary: salary,
+        department: department
+    };
+   
